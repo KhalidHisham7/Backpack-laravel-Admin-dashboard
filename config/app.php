@@ -162,6 +162,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Backpack\Base\BaseServiceProvider::class,
         Backpack\CRUD\CrudServiceProvider::class,
+        Backpack\LangFileManager\LangFileManagerServiceProvider::class,
     ],
 
     /*
