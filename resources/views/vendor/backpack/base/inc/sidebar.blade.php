@@ -13,6 +13,10 @@
           <!-- ==== Recommended place for admin menu items ==== -->
           <!-- ================================================ -->
 
+          <li><a href="{{ url(config('backpack.base.route_prefix', 'admin'). '/elfinder') }}">
+            <i class="fa fa-files-o"></i><span>File manager</span>
+          </a></li>
+
           @include('backpack::inc.sidebar_content')
 
           <!-- ======================================= -->
