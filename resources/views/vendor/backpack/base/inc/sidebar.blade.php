@@ -12,6 +12,12 @@
           <!-- ================================================ -->
           <!-- ==== Recommended place for admin menu items ==== -->
           <!-- ================================================ -->
+          @include('backpack::inc.sidebar_content')
+
+          <li><a href="{{ url('admin/customer') }}">
+            <i class="fa fa-user"></i><span>Manage Customers</span>
+          </a></li>
+
 
           <li><a href="{{ url(config('backpack.base.route_prefix', 'admin'). '/elfinder') }}">
             <i class="fa fa-files-o"></i><span>File manager</span>
@@ -25,7 +31,7 @@
             <i class="fa fa-language"></i> <span>Language Files</span>
           </a></li>
 
-          @include('backpack::inc.sidebar_content')
+
 
           <!-- ======================================= -->
           {{-- <li class="header">Other menus</li> --}}

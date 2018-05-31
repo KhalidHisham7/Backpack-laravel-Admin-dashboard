@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+//Admin group
+Route::group(['prefix' => 'admin' , 'middleware' => 'admin'], function(){
+  CRUD::resource('customer', 'admin\CustomerCrudController');
+});
