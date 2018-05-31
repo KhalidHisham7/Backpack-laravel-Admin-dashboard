@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::group(['prefix' => 'admin' , 'middleware' => 'admin'], function(){
   CRUD::resource('customer', 'admin\CustomerCrudController');
 });
+
+//Page Routes
+Route::get('{page}/{subs?}' , ['uses' => 'PageController@index'])
+      ->where(['page' => '^((?!admin).)*$' , 'subs' => '.*']);

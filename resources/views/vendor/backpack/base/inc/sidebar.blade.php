@@ -14,6 +14,11 @@
           <!-- ================================================ -->
           @include('backpack::inc.sidebar_content')
 
+
+          <li><a href="{{ url(config('backpack.base.route_prefix'). '/page') }}">
+            <i class="fa fa-file-o"></i><span>Pages</span>
+          </a></li>
+
           <li><a href="{{ url('admin/customer') }}">
             <i class="fa fa-user"></i><span>Manage Customers</span>
           </a></li>
